@@ -1,0 +1,12 @@
+/* Home.css */
+.home {
+    padding: 40px;
+    text-align: center;
+    background-color: #ecf0f1; /* Light grey */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home h2 {
+    margin: 20px 0;
+}
