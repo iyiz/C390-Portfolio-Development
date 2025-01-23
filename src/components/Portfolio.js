@@ -17,8 +17,8 @@ const Portfolio = () => {
     const [showProjects, setShowProjects] = useState(false); // Control visibility of projects
 
     const designProjects = [
-        { title: "Project 1: Flower Shop App", video: flowerShopVideo, objective: "Designed and developed a mobile e-commerce application for a flower shop." },
-        { title: "Project 2: FoodieGo App", video: foodieGoVideo, objective: "Developed a mobile application for restaurant bookings and exploration." }
+        { title: "Project 1: Flower Shop App", video: flowerShopVideo, objective: "Designed and developed a mobile e-commerce application for a flower shop.", link: "https://www.figma.com/design/s7bwnR0UmEceDlByAN6Lma/Shopping-App?node-id=57-27&p=f&t=VkgugoaHV0Z9t7Vh-0" },
+        { title: "Project 2: FoodieGo App", video: foodieGoVideo, objective: "Developed a mobile application for restaurant bookings and exploration.", link: "https://www.figma.com/design/ZHQPkgAmFJzLD1lbH7mr7X/FoodieGo-High-fidelity-Wireframe?node-id=0-1&p=f&t=FFWvTAH4QWwGaSAS-0" }
     ];
 
     const codingProjects = [
@@ -83,6 +83,12 @@ const Portfolio = () => {
                                         <Accordion>
                                             <Accordion.Item eventKey={index.toString()}>
                                                 <Accordion.Header>View Details</Accordion.Header>
+                                                <Accordion.Body>
+                                                    <p>{project.objective}</p>
+                                                    {project.link && (
+                                                        <Button variant="primary" className="view-project-button" href={project.link} target="_blank">View Project</Button>
+                                                    )}
+                                                </Accordion.Body>
                                             </Accordion.Item>
                                         </Accordion>
                                     </Card.Body>
