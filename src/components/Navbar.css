@@ -3,14 +3,26 @@
     padding: 1em; /* Add some padding */
 }
 
+.navbar-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space logo and links */
+}
+
+.navbar-logo {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 1em; /* Space between logo and links */
+}
+
 .navbar ul {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around; /* Space links evenly */
+    display: flex; /* Display links in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .navbar li {
-    margin: 0 1em;
+    margin: 0 1em; /* Space between links */
 }
 
 .navbar a {
