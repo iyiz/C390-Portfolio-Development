@@ -1,27 +1,24 @@
-/* Navbar.css */
 .navbar {
-    background-color: #2980b9; /* Blue */
-    padding: 15px;
-    text-align: center;
+    background-color: #444; /* Darker color for contrast */
+    padding: 1em; /* Add some padding */
 }
 
 .navbar ul {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Space links evenly */
 }
 
 .navbar li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 1em;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: white; /* Change link color to white for visibility */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
 }
 
 .navbar a:hover {
-    color: #f39c12; /* Orange */
+    text-decoration: underline; /* Underline on hover */
 }

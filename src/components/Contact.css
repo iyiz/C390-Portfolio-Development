@@ -1,8 +1,40 @@
-/* Contact.css */
-.contact {
-    padding: 40px;
-    text-align: center;
-    background-color: #ffffff; /* White */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.contact-section {
+    background: linear-gradient(to bottom, #FFCCCB, #FFB3BA); 
+    padding: 4em 2em;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2em; /* Space below section */
+}
+
+h2 {
+    font-size: 2.5em; 
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+input {
+    width: 100%;
+    padding: 0.75em; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cta-button {
+    background-color: #FF6F61; 
+    color: white;
+    border: none;
+    border-radius: 25px; /* More rounded button */
+    padding: 0.75em 2em; /* More padding */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #FF4F3A; 
+    transform: scale(1.05);
 }

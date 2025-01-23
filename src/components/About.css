@@ -1,8 +1,77 @@
-/* About.css */
-.about {
-    padding: 40px;
-    text-align: center;
-    background-color: #ffffff; /* White */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.about-section {
+    background: linear-gradient(to right, #fce4ec, #d5006d); /* Gradient background */
+    color: #333; /* Text color */
+    padding: 4em 2em;
+    max-width: 800px;
+    margin: 2em auto; /* Centered with margin */
+    text-align: left;
+    border-radius: 15px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5em; 
+    margin-bottom: 0.5em; 
+}
+
+h3 {
+    font-size: 1.5em; 
+    margin-top: 2em; 
+    color: #FFFFFF; /* Change to white or a contrasting color */
+    border-bottom: 2px solid #FF6F61; /* Keep the underline for emphasis */
+    padding-bottom: 0.5em; /* Add some padding below the title */
+}
+
+p {
+    margin: 1em 0; 
+    color: #333; /* Keep paragraph text consistent */
+}
+
+.name-highlight {
+    color: #333; /* Change to the desired color */
+    font-weight: bold; /* Make it bold */
+}
+
+.skills-list, .soft-skills-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 1em 0; /* Add margin for spacing */
+}
+
+.skill-item, .soft-skill-item {
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em 0; /* Space between items */
+    transition: transform 0.3s, box-shadow 0.3s; 
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.skill-item:hover, .soft-skill-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.skill-item svg, .soft-skill-item svg {
+    margin-right: 0.5em; /* Space between icon and text */
+    color: #d5006d; /* Color for icons */
+}
+
+.cta-button {
+    background-color: #d5006d; /* Button color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 25px; 
+    padding: 1em 2.5em; 
+    font-size: 1.5em; 
+    cursor: pointer;
+    margin-top: 1.5em; /* Space above button */
+    text-transform: uppercase; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #c51162; 
+    transform: scale(1.05); /* Slightly reduce scale */
 }

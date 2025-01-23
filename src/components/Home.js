@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
-  return (
-    <div className="home" id="home">
-      <h2>Welcome to My Portfolio!</h2>
-      <p>I'm a passionate designer creating beautiful solutions.</p>
-      <img src="https://via.placeholder.com/150" alt="Cute Illustration" />
-    </div>
-  );
+    return (
+        <section id="home" className="home-section">
+            <h1>Hello, I'm <span className="highlight">SONG ZI YI</span>.</h1>
+            <p className="role">Developer. Designer. Innovator.</p>
+            <p className="tagline">Crafting beautiful and functional web experiences.</p>
+            <p>Welcome to my portfolio! :)</p>
+            <Link to="/about" className="cta-button">View My Work</Link>
+            <p className="explore">Feel free to explore and connect!</p>
+            <div className="divider"></div> {/* Divider */}
+        </section>
+    );
 };
 
 export default Home;

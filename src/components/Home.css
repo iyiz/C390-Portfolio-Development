@@ -1,12 +1,57 @@
-/* Home.css */
-.home {
-    padding: 40px;
+.home-section {
+    background: linear-gradient(to right, #fce4ec, #d5006d); /* Gradient background */
+    color: #333; /* Text color */
+    padding: 4em 2em;
     text-align: center;
-    background-color: #ecf0f1; /* Light grey */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-height: 100vh; 
+    position: relative; 
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 2em; /* Space around the section */
 }
 
-.home h2 {
-    margin: 20px 0;
+.highlight {
+    color: #333; /* Highlighted text color */
+    font-weight: bold; /* Make it stand out */
+}
+
+.tagline {
+    font-size: 1.5em; /* Increase tagline size */
+    color: #fff; /* Lighter color for contrast */
+    margin: 1em 0; /* Space around tagline */
+}
+
+.role {
+    font-size: 1.2em; /* Slightly larger for emphasis */
+    color: #fff; /* Change to white for contrast */
+}
+
+.cta-button {
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    padding: 1em 2.5em; 
+    font-size: 1.5em; 
+    cursor: pointer;
+    margin: 1.5em 0; /* Space above and below button */
+    text-transform: uppercase; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #c51162; 
+    transform: scale(1.05); /* Slightly reduce scale */
+}
+
+.explore {
+    margin-top: 1em; /* Space before exploring message */
+    font-size: 1.1em; /* Slightly larger for emphasis */
+}
+
+.divider {
+    height: 4px; 
+    background-color: #FF6F61; 
+    margin: 2em auto; 
+    width: 80%; 
 }
