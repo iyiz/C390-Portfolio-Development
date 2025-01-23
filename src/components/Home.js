@@ -9,7 +9,7 @@ const Home = () => {
             <p className="role">Developer. Designer. Innovator.</p>
             <p className="tagline">Crafting beautiful and functional web experiences.</p>
             <p>Welcome to my portfolio! :)</p>
-            <Link to="/about" className="cta-button">View My Work</Link>
+            <Link to="/about" className="cta-button">View More</Link>
             <p className="explore">Feel free to explore and connect!</p>
             <div className="divider"></div> {/* Divider */}
         </section>
