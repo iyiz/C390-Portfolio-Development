@@ -42,7 +42,7 @@ p {
     background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
     border-radius: 10px;
     padding: 1em;
-    margin: 0.5em 0; /* Space between items */
+    margin: 0.2em 0; /* Space between items */
     transition: transform 0.3s, box-shadow 0.3s; 
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center items vertically */

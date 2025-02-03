@@ -20,18 +20,17 @@ const About = () => {
             <a href="/contact" className="cta-button">Get in Touch</a>
 
             <h3>Technical Skills:</h3>
-            <ul className="skills-list">
-                <li className="skill-item"><FontAwesomeIcon icon={faHtml5} /> HTML</li>
-                <li className="skill-item"><FontAwesomeIcon icon={faCss3Alt} /> CSS</li>
-                <li className="skill-item"><FontAwesomeIcon icon={faJs} /> JavaScript</li>
-                <li className="skill-item"><FontAwesomeIcon icon={faReact} /> React</li>
-                <li className="skill-item">Java</li>
-                <li className="skill-item">Responsive Design Principles</li>
-                <li className="skill-item">Troubleshooting & Debugging</li>
-                <li className="skill-item">Documentation and Reporting</li>
-                <li className="skill-item">Figma (Design & Prototyping)</li>
-                <li className="skill-item">C#</li>
-            </ul>
+            <div className="skills-inline">
+                <span className="skill-item"><FontAwesomeIcon icon={faHtml5} /> HTML</span>
+                <span className="skill-item"><FontAwesomeIcon icon={faCss3Alt} /> CSS</span>
+                <span className="skill-item"><FontAwesomeIcon icon={faJs} /> JavaScript</span>
+                <span className="skill-item"><FontAwesomeIcon icon={faReact} /> React</span>
+                <span className="skill-item">Java</span>
+                <span className="skill-item">Responsive Design Principles</span>
+                <span className="skill-item">Troubleshooting & Debugging</span>
+                <span className="skill-item">Figma (Design & Prototyping)</span>
+                <span className="skill-item">C#</span>
+            </div>
 
             <h3>Soft Skills:</h3>
             <ul className="soft-skills-list">
