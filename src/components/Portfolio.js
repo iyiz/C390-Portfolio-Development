@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Portfolio.css';
-import { Container, Row, Col, Card, Button, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import gpaCalcVideo from '../videos/gpa-calculator.mp4';
 import booksAppVideo from '../videos/books-app.mp4';
 import foodieGoVideo from '../videos/foodieGo.mp4';
@@ -11,25 +11,80 @@ import getAboatVideo from '../videos/getAboat.mp4';
 import favouriteMoviesVideo from '../videos/favouriteMovies.mp4';
 import ziYisPizzaScreenshot from '../images/ziYisPizza.png';
 import playlistManagerScreenshot from '../images/playlistManager.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import figmaIcon from '../images/figma-icon.png'; // Adjust the path accordingly
 
 const Portfolio = () => {
-    const [activeTab, setActiveTab] = useState(''); // No initial active tab
-    const [showProjects, setShowProjects] = useState(false); // Control visibility of projects
+    const [activeTab, setActiveTab] = useState('');
+    const [showProjects, setShowProjects] = useState(false);
 
     const designProjects = [
-        { title: "Project 1: Flower Shop App", video: flowerShopVideo, objective: "Designed and developed a mobile e-commerce application for a flower shop.", link: "https://www.figma.com/design/s7bwnR0UmEceDlByAN6Lma/Shopping-App?node-id=57-27&p=f&t=VkgugoaHV0Z9t7Vh-0" },
-        { title: "Project 2: FoodieGo App", video: foodieGoVideo, objective: "Developed a mobile application for restaurant bookings and exploration.", link: "https://www.figma.com/design/ZHQPkgAmFJzLD1lbH7mr7X/FoodieGo-High-fidelity-Wireframe?node-id=0-1&p=f&t=FFWvTAH4QWwGaSAS-0" }
+        {
+            title: "Project 1: Flower Shop App",
+            video: flowerShopVideo,
+            objective: "This mobile e-commerce application showcases floral arrangements. I learned about user interface design in Figma and developed a user-friendly experience.",
+            link: "https://www.figma.com/design/s7bwnR0UmEceDlByAN6Lma/Shopping-App?node-id=57-27&p=f&t=VkgugoaHV0Z9t7Vh-0",
+            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma", <FontAwesomeIcon icon={faReact} />]
+        },
+        {
+            title: "Project 2: FoodieGo App",
+            video: foodieGoVideo,
+            objective: "A mobile application for restaurant bookings and exploration. I enhanced my skills in UI/UX design and learned how to implement responsive layouts.",
+            link: "https://www.figma.com/design/ZHQPkgAmFJzLD1lbH7mr7X/FoodieGo-High-fidelity-Wireframe?node-id=0-1&p=f&t=FFWvTAH4QWwGaSAS-0",
+            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma", <FontAwesomeIcon icon={faReact} />]
+        }
     ];
 
     const codingProjects = [
-        { title: "Project 3: GPA Calculator", video: gpaCalcVideo, objective: "A GPA calculator app built with React Native." },
-        { title: "Project 4: The Greatest Books", video: booksAppVideo, objective: "A mobile application displaying a list of notable books." },
-        { title: "Project 5: VR Escape Room", img: project5Screenshot, objective: "Designed and developed a puzzle-based interactive VR escape room experience." },
-        { title: "Project 6: Movie App Starter", img: project6Screenshot, objective: "Created a functional movie search and display application using React." },
-        { title: "Project 7: Get-A-Boat App", video: getAboatVideo, objective: "Developed a mobile application for browsing and searching boats for sale." },
-        { title: "Project 8: Favorite Movies App", video: favouriteMoviesVideo, objective: "Created a mobile application to display a list of favorite movies." },
-        { title: "Project 9: Zi Yi's Pizza Menu", img: ziYisPizzaScreenshot, objective: "Developed a simple, responsive menu for Zi Yi's Pizza." },
-        { title: "Project 10: Playlist Manager", img: playlistManagerScreenshot, objective: "Developed a Playlist Manager to organize and manage songs." }
+        {
+            title: "Project 3: GPA Calculator",
+            video: gpaCalcVideo,
+            objective: "Built a GPA calculator app using React Native. This project taught me about state management and user input handling.",
+            skills: [<FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 4: The Greatest Books",
+            video: booksAppVideo,
+            objective: "Developed a mobile app displaying notable books. I focused on API integration and data rendering techniques.",
+            skills: [<FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 5: VR Escape Room",
+            img: project5Screenshot,
+            objective: "Designed a puzzle-based VR escape room experience using Unity and C#. This project enhanced my understanding of 3D space and game mechanics.",
+            skills: ["C#"]
+        },
+        {
+            title: "Project 6: Movie App Starter",
+            img: project6Screenshot,
+            objective: "Created a functional movie search and display application using React. I learned about external API usage and state management.",
+            skills: [<FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 7: Get-A-Boat App",
+            video: getAboatVideo,
+            objective: "Developed a mobile app for browsing and searching boats for sale. This project improved my skills in filtering and searching data.",
+            skills: [<FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 8: Favorite Movies App",
+            video: favouriteMoviesVideo,
+            objective: "Created an app to display a list of favorite movies. I focused on user interface design and API calls.",
+            skills: [<FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 9: Zi Yi's Pizza Menu",
+            img: ziYisPizzaScreenshot,
+            objective: "Developed a responsive menu for Zi Yi's Pizza using React. This project improved my skills in responsive web design.",
+            skills: [<FontAwesomeIcon icon={faHtml5} />, "HTML", <FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        },
+        {
+            title: "Project 10: Playlist Manager",
+            img: playlistManagerScreenshot,
+            objective: "Created a Playlist Manager to organize and manage songs. I learned about CRUD operations and local storage.",
+            skills: [<FontAwesomeIcon icon={faHtml5} />, "HTML", <FontAwesomeIcon icon={faJs} />, "JavaScript", <FontAwesomeIcon icon={faReact} />, "React"]
+        }
     ];
 
     const handleButtonClick = (category) => {
@@ -68,7 +123,7 @@ const Portfolio = () => {
                 {showProjects && (
                     <Row>
                         {(activeTab === 'design' ? designProjects : codingProjects).map((project, index) => (
-                            <Col md={6} key={index} className="mb-4">
+                            <Col xs={12} md={6} lg={4} key={index} className="mb-4">
                                 <Card className="project-card">
                                     {project.video ? (
                                         <video className="project-video" controls>
@@ -80,17 +135,23 @@ const Portfolio = () => {
                                     )}
                                     <Card.Body>
                                         <Card.Title className="project-title">{project.title}</Card.Title>
-                                        <Accordion>
-                                            <Accordion.Item eventKey={index.toString()}>
-                                                <Accordion.Header>View Details</Accordion.Header>
-                                                <Accordion.Body>
-                                                    <p>{project.objective}</p>
-                                                    {project.link && (
-                                                        <Button variant="primary" className="view-project-button" href={project.link} target="_blank">View Project</Button>
-                                                    )}
-                                                </Accordion.Body>
-                                            </Accordion.Item>
-                                        </Accordion>
+                                        <Card.Text>{project.objective}</Card.Text>
+                                        <div className="skills-list">
+                                            {project.skills.map((skill, idx) => (
+                                                <span key={idx} className="skill-item">{skill}</span>
+                                            ))}
+                                        </div>
+                                        {project.link && (
+                                            <Button 
+                                                variant="primary" 
+                                                className="view-project-button" 
+                                                href={project.link} 
+                                                target="_blank" 
+                                                style={{ width: '100%' }} 
+                                            >
+                                                View Project in Figma
+                                            </Button>
+                                        )}
                                     </Card.Body>
                                 </Card>
                             </Col>

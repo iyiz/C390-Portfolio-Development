@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
+import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About'; 

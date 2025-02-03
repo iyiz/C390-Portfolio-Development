@@ -30,6 +30,7 @@ const About = () => {
                 <li className="skill-item">Troubleshooting & Debugging</li>
                 <li className="skill-item">Documentation and Reporting</li>
                 <li className="skill-item">Figma (Design & Prototyping)</li>
+                <li className="skill-item">C#</li>
             </ul>
 
             <h3>Soft Skills:</h3>

@@ -55,3 +55,17 @@
     margin: 2em auto; 
     width: 80%; 
 }
+
+.featured-projects {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em; /* Space above the projects */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.project-card {
+    width: 30%; /* Adjust width as needed */
+    margin: 1em; /* Space between cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px; /* Rounded corners */
+}
