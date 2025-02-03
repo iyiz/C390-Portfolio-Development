@@ -25,14 +25,14 @@ const Portfolio = () => {
             video: flowerShopVideo,
             objective: "This mobile e-commerce application showcases floral arrangements. I learned about user interface design in Figma and developed a user-friendly experience.",
             link: "https://www.figma.com/design/s7bwnR0UmEceDlByAN6Lma/Shopping-App?node-id=57-27&p=f&t=VkgugoaHV0Z9t7Vh-0",
-            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma", <FontAwesomeIcon icon={faReact} />]
+            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma"]
         },
         {
             title: "Project 2: FoodieGo App",
             video: foodieGoVideo,
             objective: "A mobile application for restaurant bookings and exploration. I enhanced my skills in UI/UX design and learned how to implement responsive layouts.",
             link: "https://www.figma.com/design/ZHQPkgAmFJzLD1lbH7mr7X/FoodieGo-High-fidelity-Wireframe?node-id=0-1&p=f&t=FFWvTAH4QWwGaSAS-0",
-            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma", <FontAwesomeIcon icon={faReact} />]
+            skills: [<img src={figmaIcon} alt="Figma" style={{ width: '20px', marginRight: '5px' }} />, "Figma"]
         }
     ];
 
