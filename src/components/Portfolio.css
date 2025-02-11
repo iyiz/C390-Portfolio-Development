@@ -42,7 +42,7 @@
     flex-direction: column; /* Arrange children vertically */
     height: auto; /* Allow height to adjust based on content */
     width: 100%; /* Set to full width of the column */
-    max-width: 350px; /* Increase card width as needed */
+    max-width: 450px; /* Increased card width */
     margin-left: auto; /* Center the card */
     margin-right: auto; /* Center the card */
 }
